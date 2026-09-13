@@ -1,0 +1,7 @@
+Aperture is original MIT-licensed software.
+
+Grok Build (https://github.com/xai-org/grok-build) is SpaceXAI's coding-agent
+TUI, licensed Apache License 2.0. Aperture does not copy that source tree.
+
+If you run the official `grok` binary against this repository, you are using
+SpaceXAI's software under its own license and notices.
