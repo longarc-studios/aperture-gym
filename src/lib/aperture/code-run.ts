@@ -3,6 +3,15 @@ import { performAction } from "./actions";
 
 /**
  * Interprets a tiny Playwright-shaped subset. Never evals.
+ * Supported:
+ *   await page.goto('...')
+ *   await page.title() / page.url()
+ *   await page.locator('...').click()
+ *   await page.locator('...').fill('...')
+ *   await page.locator('...').type('...')
+ *   await page.locator('...').hover()
+ *   await page.keyboard.press('Enter')
+ *   return { url: await page.url(), title: await page.title() }
  */
 export function interpretCode(
   root: ParentNode,

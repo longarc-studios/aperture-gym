@@ -1,0 +1,6 @@
+{
+  "title": "Aperture",
+  "type": "website",
+  "card": "custom",
+  "description": "A model-agnostic RL environment for computer-use agents."
+}

@@ -40,7 +40,7 @@ export const TOOLS: ToolSchema[] = [
   {
     name: "run",
     description:
-      'Execute a batch of snapshot actions that reference IDs from the latest snapshot, or a small Playwright-shaped code snippet against `page`. Accepts exactly one of `code` or `actions`. Snapshot actions support click, hover, fill, type, press, select, scroll, and goto. Example actions: [{ "op": "click", "id": "1-42" }]. Example code: await page.goto(\'/worlds/civic-library\'); return await page.title();',
+      "Execute a batch of snapshot actions that reference IDs from the latest snapshot, or a small Playwright-shaped code snippet against `page`. Accepts exactly one of `code` or `actions`. Snapshot actions support click, hover, fill, type, press, select, scroll, and goto. Example actions: [{ \"op\": \"click\", \"id\": \"1-42\" }]. Example code: await page.goto('/worlds/civic-library'); return await page.title();",
     parameters: {
       type: "object",
       properties: {

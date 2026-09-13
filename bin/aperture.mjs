@@ -1,6 +1,10 @@
 #!/usr/bin/env node
 /**
  * Aperture CLI — same gym as the web UI, headless, for Grok Build / scripts.
+ *
+ *   npm run aperture -- list
+ *   npm run aperture -- play civic-library --reference
+ *   npm run aperture -- play civic-library --model llama3.1 --base-url http://127.0.0.1:11434/v1
  */
 import { spawn } from "node:child_process";
 import { mkdirSync, writeFileSync } from "node:fs";

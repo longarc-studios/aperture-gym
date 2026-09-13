@@ -1,0 +1,18 @@
+# Example catalog for the official Grok Build TUI (Apache-2.0, xai-org/grok-build)
+# when you open THIS repo in `grok`. Aperture itself does not require this file.
+# Copy to ~/.grok/config.toml or merge the [model] tables you already have.
+
+[model.aperture-local]
+name = "Aperture local (Ollama)"
+model = "llama3.1"
+provider = "ollama"
+
+[model_providers.ollama]
+name = "Ollama"
+base_url = "http://127.0.0.1:11434/v1"
+wire_api = "chat_completions"
+
+[model.aperture-grok]
+name = "Grok"
+model = "grok-4.5"
+provider = "xai"

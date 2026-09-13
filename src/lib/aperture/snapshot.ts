@@ -147,7 +147,7 @@ export function captureSnapshot(root: Element): Observation & { maps: SnapshotMa
             : ""
           : "";
       const label = name ? ` ${JSON.stringify(name)}` : "";
-      lines.push(`${"  ".repeat(Math.max(0, depth))}[${id}] ${role}${label}${extra}`);
+      lines.push(`${"  ".repeat(Math.max(0, depth)) }[${id}] ${role}${label}${extra}`);
     }
     const nextDepth = keep ? depth + 1 : depth;
     for (const child of Array.from(el.children)) walk(child, nextDepth);

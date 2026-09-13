@@ -1,0 +1,95 @@
+@import "tailwindcss";
+@import "tw-animate-css";
+
+@theme {
+  --color-background: #0a0b0c;
+  --color-foreground: #ececea;
+  --color-card: #121416;
+  --color-card-foreground: #ececea;
+  --color-popover: #16181b;
+  --color-popover-foreground: #ececea;
+  --color-primary: #d6d3cc;
+  --color-primary-foreground: #0a0b0c;
+  --color-secondary: #1a1d21;
+  --color-secondary-foreground: #ececea;
+  --color-muted: #1a1d21;
+  --color-muted-foreground: #8b908c;
+  --color-accent: #1e2226;
+  --color-accent-foreground: #ececea;
+  --color-destructive: #b45a4e;
+  --color-destructive-foreground: #ececea;
+  --color-border: color-mix(in oklab, #ececea 12%, transparent);
+  --color-input: color-mix(in oklab, #ececea 14%, transparent);
+  --color-ring: #d6d3cc;
+  --color-success: #7a9a7a;
+  --color-warning: #c4a574;
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius: 12px;
+  --font-sans: "IBM Plex Sans", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", "Times New Roman", serif;
+  --font-serif: "Iowan Old Style", Palatino, Georgia, serif;
+  --font-mono: "IBM Plex Mono", ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+  --shadow-border: 0 0 0 1px color-mix(in oklab, #ececea 8%, transparent);
+  --shadow-border-hover: 0 0 0 1px color-mix(in oklab, #ececea 16%, transparent);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+  * {
+    border-color: var(--color-border);
+  }
+  html,
+  body,
+  #app {
+    min-height: 100%;
+    background: var(--color-background);
+    color: var(--color-foreground);
+  }
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+    overflow-x: hidden;
+  }
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+    font-family: var(--font-display);
+  }
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.iris-grid {
+  background-image:
+    linear-gradient(color-mix(in oklab, var(--color-foreground) 4.5%, transparent) 1px, transparent 1px),
+    linear-gradient(90deg, color-mix(in oklab, var(--color-foreground) 4.5%, transparent) 1px, transparent 1px);
+  background-size: 48px 48px;
+  background-position: -1px -1px;
+}

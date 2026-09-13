@@ -6,7 +6,7 @@ You are continuing **Aperture**, a model-agnostic computer-use RL gym. The gym i
 
 ## What to build
 
-An **Aperture CLI** driven from Grok Build CLI. Same worlds, same tools (`run` / `snapshot` / `screenshot` / `act` / `extract` / `observe` / `done`), same rewards, same traces.
+An **Aperture CLI** driven from Grok Build CLI. Same worlds, same tools (`run` / `snapshot` `/screenshot` / `act` / `extract` / `observe` / `done`), same rewards, same traces.
 
 ```bash
 cd <this-repo>

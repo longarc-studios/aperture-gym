@@ -4,7 +4,6 @@ This gym must stay exact — same worlds, tools, rewards, traces as the web UI.
 
 Do not build a desktop GUI. Continue the Aperture CLI so Grok Build can drive it:
 
-  npm install
   npm run aperture -- list
   npm run aperture -- play civic-library --reference
   npm run aperture -- export civic-library --reference --format sft
